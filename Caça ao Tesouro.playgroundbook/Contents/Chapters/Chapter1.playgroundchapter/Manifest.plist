@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>O Tesouro Perdido</string>
+	<key>TemplatePageFilename</key>
+	<string>Template.playgroundpage</string>
+	<key>InitialUserPages</key>
+	<array>
+		<string>page01.playgroundpage</string>
+		<string>page02.playgroundpage</string>
+		<string>page03.playgroundpage</string>
+		<string>page04.playgroundpage</string>
+		<string>page05.playgroundpage</string>
+	</array>
+</dict>
+</plist>
