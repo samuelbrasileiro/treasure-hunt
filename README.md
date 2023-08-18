@@ -23,7 +23,7 @@ Treasure Hunt Adventure Playground Book is an engaging and educational journey t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Treasure-Marine-Adventure.git
+   git clone https://github.com/samuelbrasileiro/treasure-hunt.git
    ```
 
 2. Open the project in Swift Playgrounds App.
