@@ -52,19 +52,14 @@ enum Color: String, CaseIterable {
     }
 }
 
-let charadas = [
-    "O vértice do amor, paixão ardente a queimar, que figura sou eu, que a cor do fogo faz dançar?",
-    "União infinita, céu a explorar, na dança do tempo, que cor eu sou a pairar?",
-    "Sólido e terreno, no campo sou abrigo, sempre firme e seguro, que cor a natureza sigo?",
-    "Forma bruxal enigmática, sol radiante a brilhar, múltiplos caminhos, que figura posso emoldurar?"
-]
-
 struct PuzzlePiece: View {
     var shape: Shape
     var color: Color
     
     var body: some View {
         Image(systemName: shape.imageName)
+            .resizable()
+            .frame(width: 50, height: 50)
             .foregroundColor(color.color)
     }
 }
@@ -77,11 +72,12 @@ struct PuzzleView: View {
     }
 
     var body: some View {
-        VStack {
+        HStack(spacing: 10) {
             ForEach(0..<riddles.count) { index in
-                HStack {
+                VStack {
                     PuzzlePiece(shape: riddles[index].0, color: riddles[index].1)
                     Text(results[index] ? "Correto" : "Incorreto")
+                        .bold()
                         .foregroundColor(results[index] ? .green : .red)
                 }
             }
@@ -89,7 +85,7 @@ struct PuzzleView: View {
     }
 
     private func correctSolution() -> [(Shape, Color)] {
-        return [(.triangle, .red), (.circle, .blue), (.square, .green), (.pentagon, .yellow)]
+        return [(.triangle, .red),  (.pentagon, .yellow), (.square, .green), (.circle, .blue)]
     }
 
     private func checkSolution(_ solution: [(Shape, Color)]) -> [Bool] {

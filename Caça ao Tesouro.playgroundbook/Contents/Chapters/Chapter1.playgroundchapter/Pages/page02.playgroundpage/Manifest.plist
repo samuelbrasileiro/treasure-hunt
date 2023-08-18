@@ -5,8 +5,10 @@
 	<key>Name</key>
 	<string>Mapa do Tesouro</string>
 	<key>LiveViewEdgeToEdge</key>
-	<false/>
+	<true/>
 	<key>LiveViewMode</key>
-	<string>HiddenByDefault</string>
+	<string>VisibleByDefault</string>
+	<key>MaximumSupportedExecutionSpeed</key>
+	<string>Fastest</string>
 </dict>
 </plist>

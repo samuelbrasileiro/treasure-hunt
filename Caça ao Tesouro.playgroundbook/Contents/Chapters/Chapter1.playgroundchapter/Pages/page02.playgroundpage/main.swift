@@ -95,6 +95,7 @@ struct TreasureMapView: View {
 
 //#-end-hidden-code
 /*:
+# Mapa do Tesouro
 Vocês encontraram um mapa enigmático que pode levar a um tesouro escondido.
 
 O mapa contém coordenadas que devem ser decifradas para revelar a localização do tesouro. Insira diferentes coordenadas para encontrar o tesouro. 
